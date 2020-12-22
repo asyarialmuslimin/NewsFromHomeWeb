@@ -1,7 +1,7 @@
 class DataSource{
 
     static loadHeadlineArticle(){
-        return fetch(`https://newsapi.org/v2/top-headlines?country=id&apiKey=e0a8cc9912054a778ef0abb4f07d89d1&lang=id&pageSize=4`)
+        return fetch(`https://newsapi.org/v2/top-headlines?country=id&apiKey=<YOUR NEWSAPI APIKEY>&lang=id&pageSize=4`)
         .then(response => {
             return response.json();
         })
