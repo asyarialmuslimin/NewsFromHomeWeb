@@ -15,7 +15,7 @@ class DataSource{
     }
 
     static loadBeritaKategori(kategori, max=20){
-        return fetch(`http://newsapi.org/v2/top-headlines?country=id&category=${kategori}&apiKey=e0a8cc9912054a778ef0abb4f07d89d1&pageSize=${max}`)
+        return fetch(`http://newsapi.org/v2/top-headlines?country=id&category=${kategori}&apiKey=<YOUR NEWSAPI APIKEY>&pageSize=${max}`)
         .then(response => {
             return response.json();
         })
