@@ -29,7 +29,7 @@ class DataSource{
     }
 
     static searchBerita(keyword){
-        return fetch(`http://newsapi.org/v2/top-headlines?country=id&q=${keyword}&apiKey=e0a8cc9912054a778ef0abb4f07d89d1`)
+        return fetch(`http://newsapi.org/v2/top-headlines?country=id&q=${keyword}&apiKey=<YOUR NEWSAPI APIKEY>`)
         .then(response => {
             return response.json();
         })
